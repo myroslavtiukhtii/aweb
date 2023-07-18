@@ -1,0 +1,135 @@
+:root {
+    --textSize3: clamp(0.5rem, 7vw, 1.3rem);
+  }
+
+body {
+    font-size: 1;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 135%;
+}
+
+.main__container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main__title {
+    text-align: center;
+    font-size: clamp(1rem, 7vw, 1.5rem);
+    margin-bottom: 25px;
+}
+
+.main__subtitle {
+    font-size: var(--textSize3);
+    margin-bottom: 35px;
+}
+
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.main__subtitle:nth-of-type(2),
+.main__subtitle:nth-of-type(3),
+.main__subtitle:nth-of-type(4)   {
+    text-align: center;
+}
+
+.main__text {
+    font-size: clamp(0.5rem, 7vw, 1.2rem);
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+
+.text__bold {
+    font-weight: bold;
+}
+
+.block__list__item {
+    margin-bottom: 35px;
+    padding: 5px;
+}
+
+.list__item__image {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    max-width: 190px;
+}
+
+.list__item__description {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.description__item__link {
+    list-style-type: none; 
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-x: auto;
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    border: 2px solid #000;
+    vertical-align: top;
+
+    @media (max-width: 500px) {
+        padding: 5px;
+    }
+}
+
+.main__block {
+    margin-bottom: 50px;
+}
+
+.main__advantages__image {
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 2px;
+    min-width: 270px;
+    height: auto;
+
+    @media (max-width: 500px) {
+        width: 100%;
+        float: none;
+    }
+}
+
+.main__advantages {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+.advantages__item:first-child {
+    margin-bottom: 40px;
+}
+
+.advantages__item {
+    font-size: var(--textSize3);
+    line-height: 120%;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+
+.main__footer__list {
+    list-style-type: decimal;
+    margin-bottom: 50px;
+    max-width: 650px;
+}
+
+.footer__list__item {
+    font-size: var(--textSize3);
+    line-height: 120%;
+    margin-bottom: 30px;
+}
